@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-02-28 14:59:07.941 UTC</timestamp>
+  <md5sum>b1acf3732ee6cb9b09f04ac2649f37c7</md5sum>
+  <fileName>Credential id=25ef6161-153c-41f5-b135-de4de409287b name=ec2-user/******</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@2.6.1">
+      <timestamp>1646132107822</timestamp>
+      <nodeName>node1-Cproject</nodeName>
+      <timestamp0>1646130547821</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

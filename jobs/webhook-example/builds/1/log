@@ -1,0 +1,22 @@
+Started by GitHub push by sandeepkgf
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/webhook-example
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/sandeepkgf/c-program-.git
+ > git init /var/lib/jenkins/workspace/webhook-example # timeout=10
+Fetching upstream changes from https://github.com/sandeepkgf/c-program-.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sandeepkgf/c-program-.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sandeepkgf/c-program-.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 3a79b92f995538c7f2d44fc88d5669f6c767649f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3a79b92f995538c7f2d44fc88d5669f6c767649f # timeout=10
+Commit message: "Update big3.c"
+First time build. Skipping changelog.
+Finished: SUCCESS

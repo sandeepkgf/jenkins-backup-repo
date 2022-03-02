@@ -1,0 +1,60 @@
+SSHLauncher{host='3.89.96.238', port=22, credentialsId='3811594e-89e9-452e-b72b-3ebf4e4962e8', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=60, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.KnownHostsFileKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
+[03/01/22 08:16:22] [SSH] Opening SSH connection to 3.89.96.238:22.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 10 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 9 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 8 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 7 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 6 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 5 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 4 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 3 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 2 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 1 more retries left.
+/var/lib/jenkins/.ssh/known_hosts [SSH] No Known Hosts file was found at /var/lib/jenkins/.ssh/known_hosts. Please ensure one is created at this path and that Jenkins can read it.
+Key exchange was not finished, connection is closed.
+ERROR: Connection is not established!
+java.lang.IllegalStateException: Connection is not established!
+	at com.trilead.ssh2.Connection.getRemainingAuthMethods(Connection.java:988)
+	at com.cloudbees.jenkins.plugins.sshcredentials.impl.TrileadSSHPasswordAuthenticator.canAuthenticate(TrileadSSHPasswordAuthenticator.java:84)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1812)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.newInstance(SSHAuthenticator.java:222)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.newInstance(SSHAuthenticator.java:173)
+	at hudson.plugins.sshslaves.SSHLauncher.openConnection(SSHLauncher.java:886)
+	at hudson.plugins.sshslaves.SSHLauncher$1.call(SSHLauncher.java:434)
+	at hudson.plugins.sshslaves.SSHLauncher$1.call(SSHLauncher.java:421)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[03/01/22 08:19:07] Launch failed - cleaning up connection
+[03/01/22 08:19:07] [SSH] Connection closed.

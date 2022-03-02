@@ -1,0 +1,20 @@
+Started by user [8mha:////4Dqv1Y+QdkvHQXK/naOk3ypEZ/bQJVpUf1gEvZujv7+3AAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mABC
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/java-project1
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Newbie4030/java-project.git
+ > git init /var/lib/jenkins/workspace/java-project1 # timeout=10
+Fetching upstream changes from https://github.com/Newbie4030/java-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/Newbie4030/java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Newbie4030/java-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin//home/ec2-user^{commit} # timeout=10
+ > git rev-parse /home/ec2-user^{commit} # timeout=10
+ > git rev-parse /home/ec2-user^{commit} # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+Finished: FAILURE
